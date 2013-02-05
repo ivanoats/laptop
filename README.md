@@ -6,27 +6,38 @@ Laptop is a script to set up a Mac OS X laptop for Rails development.
 Requirements
 ------------
 
-1) Install a C compiler.
+1) Install a C compiler. The best thing to do is install [X Code from the Mac App
+Store](http://abid.es/XU7YFZ)
 
-Use [OS X GCC Installer](https://github.com/kennethreitz/osx-gcc-installer/) for
-Snow Leopard (OS X 10.6).
+Then:
 
-Use [Command Line Tools for XCode](https://developer.apple.com/downloads/index.action)
-for Lion (OS X 10.7) or Mountain Lion (OS X 10.8).
+- Open up the X Code app and choose preferences from the XCode menu.
+- Click on the downloads icon
+- Make sure the Components section is selected
+- Click on install button next to command line tools 
 
-2) Set zsh as your login shell.
+If that doesn't work for some reason:
+
+- Use [OS X GCC Installer](https://github.com/kennethreitz/osx-gcc-installer/) for Snow Leopard (OS X 10.6).
+
+- Use [Command Line Tools for XCode](https://developer.apple.com/downloads/index.action) for Lion (OS X 10.7) or Mountain Lion (OS X 10.8).
+
+2) Open up the Terminal app from /Applications/Utilities. Set zsh as
+your login shell by typing this command:
 
     chsh -s /bin/zsh
 
 Install
 -------
 
-Run the script:
+Run the script: cut and paste this command into Terminal
 
     zsh <(curl -s https://raw.github.com/thoughtbot/laptop/master/mac)
 
 What it sets up
 ---------------
+
+Basically, a pro rails setup.
 
 * Ack for finding things in files
 * Bundler gem for managing Ruby libraries
