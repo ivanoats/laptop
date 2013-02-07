@@ -9,6 +9,8 @@ Requirements
 1) Install a C compiler. The best thing to do is install [X Code from the Mac App
 Store](http://abid.es/XU7YFZ)
 
+*IMPORTANT* DO NOT SKIP THIS STEP
+
 Then:
 
 - Open up the X Code app and choose preferences from the XCode menu.
